@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haily J | Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: #0f172a;
+            color: #fff;
+            line-height: 1.6;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background: #020617;
+            position: sticky;
+            top: 0;
+        }
+
+        header h1 {
+            color: #38bdf8;
+        }
+
+        nav a {
+            color: #fff;
+            margin-left: 20px;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
+        }
+
+        .hero {
+            height: 90vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .hero h2 {
+            font-size: 3rem;
+        }
+
+        .hero span {
+            color: #38bdf8;
+        }
+
+        .btn {
+            margin-top: 20px;
+            padding: 10px 25px;
+            background: #38bdf8;
+            border: none;
+            border-radius: 25px;
+            color: #000;
+            cursor: pointer;
+        }
+
+        section {
+            padding: 60px 50px;
+        }
+
+        .card {
+            background: #1e293b;
+            padding: 20px;
+            border-radius: 15px;
+            margin-top: 20px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .skills span {
+            display: inline-block;
+            background: #38bdf8;
+            color: #000;
+            padding: 8px 15px;
+            margin: 5px;
+            border-radius: 20px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #020617;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Haily J</h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>Hello, I'm <span>Haily</span></h2>
+        <p>Frontend Developer | Computer Science Student</p>
+        <button class="btn" onclick="scrollToSection('contact')">Hire Me</button>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <button><a href="Haily_resume.pdf" download>Resume</a></button>
+        <div class="card">
+            <p>Detail-oriented Computer Science student with experience in React.js, Next.js, TypeScript, and modern web
+                development. Passionate about building responsive and user-friendly interfaces.</p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills">
+            <span>Python</span>
+            <span>JavaScript</span>
+            <span>TypeScript</span>
+            <span>React.js</span>
+            <span>Next.js</span>
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>Tailwind</span>
+            <span>MySQL</span>
+            <span>Git</span>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="card">
+            <h3>Learning Platform UI</h3>
+            <p>Built responsive UI components using React.js and TypeScript. Converted Figma designs into reusable
+                components.</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <div class="card">
+            <p>Email: hailyhaily519@gmail.com</p>
+            <p>Phone: +91 8807251496</p>
+            <p>
+                <a href="https://github.com/Ha-ily123" target="_blank">GitHub</a> |
+                <a href="https://linkedin.com/in/haily-johny" target="_blank">LinkedIn</a>
+            </p>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Haily J | Portfolio</p>
+    </footer>
+
+    <script>
+        function scrollToSection(id) {
+            document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+
+</body>
+
+</html>
