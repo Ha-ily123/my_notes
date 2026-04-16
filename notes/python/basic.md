@@ -1,5 +1,6 @@
-## Types of string
+# Python
 
+## Types of string
 
 ## Quick Summary
 
@@ -45,7 +46,7 @@ print(data)
 ### u — Unicode string (mostly for Python 2 compatibility)
 
 In Python 3, all strings are Unicode by default.
-    
+
 ```python
 text = u"Hello"
 ```
