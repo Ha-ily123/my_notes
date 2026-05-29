@@ -1,0 +1,9 @@
+OH MY CV
+
+https://ohmycv.app
+
+font: Open sans
+font size: 14px
+Margins: 35 - 40
+paragraph spacing: 14
+Line spacing: 1.3
